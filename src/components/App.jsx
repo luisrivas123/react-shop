@@ -1,9 +1,15 @@
 import React from "react";
-import '../styles/global.scss';
+import Layout from "../containers/Layout";
+import Login from "../containers/Login";
+import '../styles/global.css';
 
 const App = () => {
     return (
-        <h1>Hola</h1>
+        // Abre y cierra porque tiene hijos y resibe valores
+        <Layout>
+            {/* Se autocierra porque no recibe ningun valor */}
+            <Login />
+        </Layout>
     );
 }
 
